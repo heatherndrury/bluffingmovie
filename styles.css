@@ -12,6 +12,8 @@ body {
     font-family: "Tenor_Sans";
 }
 
+/*----------NAV BAR STYLING-----------*/
+
 .nav-bar {
     list-style-type: none;
     display: flex;
@@ -27,6 +29,7 @@ ul>li>a {
     color: white;
 }
 
+/*-----------TITLE STYLING----------*/
 .title-img {
     width: 100%;
 }
@@ -36,4 +39,5 @@ ul>li>a {
     justify-content: flex-end;
     margin: 0 1% 0 0;
     color: white;
+    font-size: 3vw;
 }
