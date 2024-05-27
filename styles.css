@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Freeman';
+    src: url(fonts/Freeman/Freeman-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Tenor_Sans';
+    src: url(fonts/Tenor_Sans/TenorSans-Regular.ttf);
+}
+body {
+    background-color: #000;
+    font-family: "Tenor_Sans";
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.nav-item {
+    text-decoration: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.title-img {
+    width: 100%;
+}
+
+.title-img-byline {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1% 0 0;
+    color: white;
+}
