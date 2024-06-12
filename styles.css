@@ -62,13 +62,14 @@ ul>li>a {
     color: white;
     padding: 0 2% 0 2%;
 }
-.storyboard-img {
-    width: 75%;
+.still-life-img {
+    width: 45%;
     display: flex;
     justify-content: center;
 }
 
-.storyboard-container {
+.still-life-container {
     display: flex;
     justify-content: center;
+    margin: 2%;
 }
