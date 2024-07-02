@@ -1,0 +1,48 @@
+
+[
+   { 
+    "img": "./images/cast/MMassie.avif",
+    "name": "Megan Massie",
+    "role": "Marissa",
+    "bio": "Megan Massie is an actor, director and voice over artist based in Louisville, Kentucky. She is represented by Heyman Talent Agency and The Talent Group."
+    },
+    {
+    
+    "name": "Damon Sudduth",
+    "role": "Eric",
+    "bio": "Damon Sudduth is an actor, writer, director, and martial artist, currently residing in Frankfort, Kentucky. He is experienced in multiple genres of film and theatre, as well as improv training and stage combat."
+    },
+    {
+    
+    "name": "Johnny Evans",
+    "role": "Jerry",
+    "bio": "Johnny Evans is a musician, poet, standup comedian and all around performer who is making his first foray into film acting. Hailing from Birkenhead, England, he will single handedly be giving our film its European flair."
+    },
+    {
+    
+    "name": "Jon Ott",
+    "role": "Writer/Director/Producer",
+    "bio": "Jonathan Ott is a filmmaker, screenwriter, visual artist, musician and occasional actor currently based out of Louisville, Kentucky. While Bluffing marks his feature film debut, Jonathan also has experience working as a set designer and a script writer, and has already completed a couple of short films."
+    },
+    {
+    
+    "name": "Tyler Lizenby",
+    "role": "Executive Producer",
+    "bio": "Tyler is a producer and videographer who has won an Emmy award for storytelling."
+    },
+    {
+    
+    "name": "Cameron Becht",
+    "role": "Director of Photography",
+    "bio": "Cameron Becht has been making a name for himself in the Louisville film scene for more than 5 years, and co-owns multiple production companies with his business partner, Allen Wilson."
+    },
+    {
+    
+    "name": "Allen Wilson",
+    "role": "Assistant Director",
+    "bio": "Allen Wilson is the owner of Big Gigantic Films, Hype Studios Production, and Eclipse Lighting and Grip. He is currently located in Louisville, Kentucky."
+    }
+]
+
+
+
