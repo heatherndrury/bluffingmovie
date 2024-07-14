@@ -13,30 +13,72 @@ body {
 }
 
 /*----------NAV BAR STYLING-----------*/
+.nav-container {
+  display:flex;
+  align-items: end;
+}
 
 .nav-bar {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4fr;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  
 }
+
 .nav-item {
   text-decoration: none;
+  text-align: center;
+  margin: 2%;
 }
 
 ul > li > a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
 
+.logo-container{
+  width: 30%;
+  margin-left: 1%;
+  
+}
 .nav-bar-logo {
-  width: 20%;
+  width: 100%;
+ 
 }
 
 /*-------HOME PAGE STYLING----------*/
-/*-----------TITLE STYLING----------*/
+
+/*---------HOME PAGE NAV BAR--------*/
+.home-nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.home-nav-item {
+  text-decoration: none;
+  text-align: center;
+  margin: 2%;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*----------TITLE & TAGLINE---------*/
 .title-img {
   width: 100%;
+}
+.bar-one {
+  background-image: url(images/graphics/cigarette.png);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 750px;
+  margin-top: -30%;
 }
 
 .title-img-byline {
@@ -46,6 +88,10 @@ ul > li > a {
   color: white;
   font-size: 3vw;
 }
+
+
+
+
 
 /*---------ABOUT PAGE STYLING--------*/
 .synopsis-title {
@@ -72,41 +118,121 @@ ul > li > a {
   margin: 2%;
 }
 
+
+/*------------CAST & CREW PAGE STYLING-----------*/
 .cast-crew-title {
   font-family: "Freeman";
   color: white;
   display: flex;
   justify-content: center;
   font-size: 5vw;
+  background-image: url(images/crew.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% 10% 5% 10%;
+  box-shadow:  0 0 .25em rgba(255, 255, 255, 0.596);
+ 
+  border-radius: 5px;
 }
+
+
 #castlist {
   display: flex;
 }
 .cast-div {
-  background-color: rgb(84, 95, 245);
-  width: 98%;
-  margin: 2% 1% 2% 1%;
+  width: 96%;
+  margin: 1%;
+  padding: 1%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr) 2fr;
+  grid-row-gap: 3px; 
+  /*border: 2px solid white;*/
+  box-shadow:  0em 0em 1em  rgba(255, 255, 255, 0.178);
+  border-radius: 5px;
 }
 .cast-img {
   width: 5em;
   height: auto;
-  grid-area: 1 / 1 / 3 / 2;
+  grid-area:   1 / 1 / 4 / 3;
 }
 
 .cast-name {
   font-size: 1.5em;
-  color: black;
-  grid-area: 1 / 2 / 2 / 3;
+  color: white;
+  grid-area: 1 / 3 / 2 / 6;
+  margin: .5em .5em .5em 0;
 }
 
 .cast-role {
-  grid-area: 2 / 2 / 3 / 3;
+  font-size: 1.25em;
+  grid-area: 2 / 3 / 3 / 6;
+  color: white;
+  font-style: italic;
+  margin: .5em .5em .5em 0;
+  align-content: ;
 }
 
 .cast-bio {
-  grid-area: 1 / 3 / 3 / 5;
+  grid-area: 3 / 3 / 4 / 6;
+  color: white;
+  margin: .5em 1.5em .5em 0;
+}
+
+/*----------------CONTACT PAGE STYLING-------------------*/
+.contact-title {
+  font-family: "Freeman";
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  background-image: url(images/still-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% 10% 5% 10%;
+  box-shadow:  0 0 .25em rgba(255, 255, 255, 0.596);
+   border-radius: 5px;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  margin: 0 2%;
+
+}
+.contact-container {
+  border-radius: 5px;
+  box-shadow: 0em 0em 1em  rgba(255, 255, 255, 0.178);
+  margin: 0 2% 0 2%;
+  padding: 1%;
+}
+.contact-form {
+  color:white;
+  margin: 0 5% 0 2%;
+  padding: 2% 1% 5% 1%;
+
+}
+#name, #email, #message  {
+  padding: 1%;
+  width: 100%
+  
+}
+#message {
+  height: 150px;
+}
+
+
+.socials-container {
+  border-radius: 5px;
+  box-shadow: 0em 0em 1em  rgba(255, 255, 255, 0.178);
+  margin: 0 5% 0 2%;
+  display: flex;
+  justify-content: center;
+}
+.socials-title {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }

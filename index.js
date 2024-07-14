@@ -9,29 +9,6 @@ async function getCast() {
       return data;
     });
 
-  // function Cast(name, role, bio) {
-  //   this.name = name;
-  //   this.role = role;
-  //   this.bio = bio;
-  // }
-  // const megan = new Cast(
-  //   "Megan Massie",
-  //   "Marissa",
-  //   "Megan Massie is an actor, director and voice over artist based in Louisville, Kentucky. She is represented by Heyman Talent Agency and The Talent Group."
-  // );
-  // const damon = new Cast(
-  //   "Damon Sudduth",
-  //   "Eric",
-  //   "Damon Sudduth is an actor, writer, director, and martial artist, currently residing in Frankfort, Kentucky. He is experienced in multiple genres of film and theatre, as well as improv training and stage combat."
-  // );
-  // const johnny = new Cast(
-  //   "Johnny Evans",
-  //   "Jerry",
-  //   "Johnny Evans is a musician, poet, standup comedian and all around performer who is making his first foray into film acting. Hailing from Birkenhead, England, he will single handedly be giving our film its European flair."
-  // );
-
-  // const cast = [megan, damon, johnny];
-
   let castList = document.getElementById("castList");
 
   cast.forEach((castMember) => {
