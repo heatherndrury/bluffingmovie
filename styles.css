@@ -91,34 +91,6 @@ ul > li > a {
 
 
 
-
-
-/*---------ABOUT PAGE STYLING--------*/
-.synopsis-title {
-  font-family: "Freeman";
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-size: 5vw;
-}
-
-.synopsis-blurb {
-  color: white;
-  padding: 0 2% 0 2%;
-}
-.still-life-img {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-}
-
-.still-life-container {
-  display: flex;
-  justify-content: center;
-  margin: 2%;
-}
-
-
 /*------------CAST & CREW PAGE STYLING-----------*/
 .cast-crew-title {
   font-family: "Freeman";
@@ -140,12 +112,12 @@ ul > li > a {
   display: flex;
 }
 .cast-div {
-  width: 96%;
-  margin: 1%;
+  width: 75%;
+  margin: 1% 12.5%;
   padding: 1%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr) 2fr;
   grid-row-gap: 3px; 
   /*border: 2px solid white;*/
@@ -153,9 +125,9 @@ ul > li > a {
   border-radius: 5px;
 }
 .cast-img {
-  width: 5em;
+  width: 45%;
   height: auto;
-  grid-area:   1 / 1 / 4 / 3;
+  grid-area:   1 / 1 / 4 / 4;
 }
 
 .cast-name {
@@ -223,6 +195,17 @@ ul > li > a {
 }
 #message {
   height: 150px;
+  
+}
+#contact-form-btn {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Tenor_Sans;
 }
 
 
@@ -255,7 +238,28 @@ ul > li > a {
   box-shadow:  0 0 .25em rgba(255, 255, 255, 0.596);
   border-radius: 5px;
 }
-.synopsis-container {
+.about-main-container {
+  display: flex;
   border-radius: 5px;
   box-shadow: 0em 0em 1em  rgba(255, 255, 255, 0.178);
+  margin: 1%;
+}
+
+.synopsis-title {
+  font-size: 1.5vw;
+  color: white;
+  margin: 4% 2% 2% 2%
+}
+.synopsis-blurb {
+  color: white;
+  padding: 0 2% 0 2%;
+}
+.still-life-img {
+  width: 100%;
+}
+
+.still-life-container {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
 }

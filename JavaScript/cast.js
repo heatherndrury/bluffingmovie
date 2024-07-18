@@ -15,10 +15,10 @@ async function getCast() {
     const newDiv = document.createElement("div");
     newDiv.classList.add("cast-div");
 
-    // const newImg = document.createElement("img");
-    // Img.src = castMember.img;
-    // newImg.classList.add("cast-img");
-    // newImg.textContent = castMember.img;
+    const newImg = document.createElement("img");
+    newImg.src = castMember.img;
+    newImg.classList.add("cast-img");
+    //newImg.textContent = castMember.img;
 
     const newH2 = document.createElement("h2");
     newH2.classList.add("cast-name");
@@ -34,6 +34,7 @@ async function getCast() {
 
 
     castList.appendChild(newDiv);
+    newDiv.appendChild(newImg)
     newDiv.appendChild(newH2);
     newDiv.appendChild(newH3);
     newDiv.appendChild(newPara);
