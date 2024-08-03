@@ -13,6 +13,7 @@ function onYouTubeIframeAPIReady() {
     height: '390',
     width: '640',
     videoId: 'vYheAqGhPwM',
+    autoplay: 0,
     playerVars: {
       'playsinline': 1
     },
@@ -42,3 +43,4 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
+

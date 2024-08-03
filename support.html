@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLUFFING|SUPPORT</title>
-
+    <link rel="icon" type="image/x-icon" href="images/graphics/bluffing-favicon.ico">
     <link href="styles.css" rel="stylesheet"/>
     
  </head>
@@ -32,14 +32,25 @@
     <div class="main-container">
         <section class="contact-container">
             <h4 class="contact-title">CONTACT US</h4>
-            <form class="contact-form">
+            <form class="contact-form" id="contact-form">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br>
                 <label for="email">E-Mail:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
+                <input class="contact-email" type="text" id="contact-email" name="email"><br>
+                
+                <div id="invalid-modal" class="invalid-modal">
+                    <p>Please enter a valid email</p>
+                </div>
+                <label for="message">Message</label><br>
                 <textarea  id="message" name="message"></textarea><br>
-                <input id="contact-form-btn" type="submit" value="Submit">
+                <button id="newsletter-btn" type="submit" >Submit</button>
+                <div id="contact-modal" class="contact-modal">
+                    <p class="contact-modal-text">Thank you for reaching out!</p>
+                </div>
+                <div id="oops-modal" class="oops-modal">
+                    <p class="contact-modal-text">Oops! Something didn't work, please try again later!</p>
+                </div>
+
             </form>
         </section>
         <section class="socials-container">
@@ -48,4 +59,27 @@
             </aside>
         </section>
     </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <img class="footer-logo" src="images/homepage-title.png" alt="stylized bluffing title">
+            <!-- <form class="newsletter" id="form1" name="form1" method="post">
+                <label for="email">Sign up for our newsletter: </label>
+                <input type="text" id="newsletter-email" name="email">
+                <button id="newsletter-btn" type="submit" >Submit</button>
+                <div id="valid-modal" class="valid-modal">
+                    <div class="modal-content">
+                      <img class="checkmark" src="images/graphics/green-check.jpg" alt="green checkmark">
+                    </div>
+                </div>
+                <div id="invalid-modal" class="invalid-modal">
+                    <p>Please enter a <br> valid email</p>
+                </div>
+                </form> -->
+            <p id="footer-copy" class="footer-copy"></p>
+        </div>
+        
+    </footer>
+    <!-- <script src="JavaScript/email-validation.js"></script> -->
+    <script src="JavaScript/formHandler.js"?></script>
+    <script src="JavaScript/index.js"></script>
 </body>

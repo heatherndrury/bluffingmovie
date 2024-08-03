@@ -49,8 +49,8 @@ ul > li > a {
 /*----------------FOOTER STYLING-----------------*/
 
 .footer {
-  padding: 2em;
-  margin: 1%;
+  padding: 2em 2em .5em 2em;
+  margin: 1% 1% 0 1%;
   background-color: #131212;
   border-radius: 5px;
   color: white;
@@ -58,27 +58,36 @@ ul > li > a {
 .footer-top {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
 }
 .footer-logo {
   width: 50%;
   grid-area: 1 / 1 / 2 / 2;
+  margin-left: 2.5%;
 }
 .newsletter {
   color: white;
   grid-area: 1 / 2 / 3 / 3;
   padding-top: 1.5%;
+  margin-left: 2%;
+  display: flex;
+  height: 30%;
+
 }
 
 #newsletter-email {
   width: 50%;
+  margin: 0 .25%;
 }
 
-.modal {
+.footer-copy {
+  margin: 1% 4%;
+}
+
+.valid-modal {
   display: none; 
-  background-color: white;
-  width: 25%;
-  margin-left: 50%;
+  width: 2%;
+  margin: .25%;
 }
 
 .modal-content {
@@ -99,9 +108,13 @@ ul > li > a {
   cursor: pointer;
 }
 
-#invalid-email-alert {
-  color: white;
+.invalid-modal {
+  display: none;
+  flex-wrap: wrap;
+  margin-top: -2%;
+  margin-left: .5%;
 }
+
 .shake {
   animation: shake 0.5s ease-in-out;
 }
@@ -123,12 +136,7 @@ ul > li > a {
   }
 }
 
-.footer-copy {
-  grid-area: 2 / 1 / 3 / 3;
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 0;
-}
+
 
 /*-------HOME PAGE STYLING----------*/
 
@@ -239,7 +247,7 @@ ul > li > a {
   margin: 0.5em 1.5em 0.5em 0;
 }
 
-/*----------------CONTACT PAGE STYLING-------------------*/
+/*----------------SUPPORT PAGE STYLING-------------------*/
 .support-title {
   font-family: "Freeman";
   color: white;
@@ -273,11 +281,20 @@ ul > li > a {
   margin: 0 5% 0 2%;
   padding: 2% 1% 5% 1%;
 }
-#name,
-#email,
+#contact-email {
+  width: 50%;
+  margin: 0 .25%;
+}
 #message {
   padding: 1%;
   width: 100%;
+}
+#name{
+  padding: 1%;
+  width: 50%
+}
+.contact-email {
+  padding:1%;
 }
 #message {
   height: 150px;
@@ -291,6 +308,17 @@ ul > li > a {
   margin: 4px 2px;
   cursor: pointer;
   font-family: Tenor_Sans;
+}
+
+.contact-modal {
+  display:none;
+
+}
+.oops-modal {
+  display: none;
+}
+.contact-modal-text {
+  color: white;
 }
 
 .socials-container {
@@ -347,3 +375,109 @@ ul > li > a {
   justify-content: center;
   margin: 2%;
 }
+
+
+
+
+
+
+/* -----------------MEDIA QUERIES----------------- */
+
+@media only screen and (max-width: 768px) {
+/* HOME PAGE */
+  .bar-one{
+  height: 200px;
+}
+
+#player {
+  width: 90%;
+  margin: 0 5% 1% 5%;
+}
+.home-nav-bar {
+  justify-content: center;
+  padding: 0;
+}
+/* FOOTER */
+.footer {
+  padding: 2%;
+}
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-logo {
+  display: none;
+}
+.newsletter {
+  padding: 1%;
+  margin-left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#newsletter-email {
+  margin: 0.5% 0.25%;
+}
+/* ABOUT PAGE */
+.about-title {
+  font-size: 10vw;
+}
+.about-main-container {
+  flex-wrap: wrap;
+}
+.synopsis-title {
+  font-size: 5vw;
+}
+/* CAST & CREW PAGE*/
+.cast-crew-title {
+  font-size: 10vw;
+}
+.cast-div {
+  display: flex;
+  width: 95%;
+  margin: 2.5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cast-img {
+  width: 65%;
+  margin: 4% 0 2% 0;
+}
+.cast-bio {
+  margin: 2%;
+}
+.cast-name {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cast-role {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0;
+}
+/* SUPPORT PAGE */
+.support-title {
+  font-size: 10vw;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-container {
+  width: 95%;
+}
+.socials-container {
+  width: 95%;
+}
+}
+/*@media only screen and (min-width: 600px) {
+  #player {
+    width: 90%;
+    margin: 0 5% 1% 5%;
+  }
+  .bar-one {
+    height: 450px;
+  }
+}*/
