@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       myHeaders.append("Content-Type", "application/json");
 
-      var requestOptions = {
+      const requestOptions = {
         method: "POST",
         headers: myHeaders,
         body: formDataJsonString,
