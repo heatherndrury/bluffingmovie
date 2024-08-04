@@ -1,6 +1,6 @@
 //To get data from json file
 async function getCast() {
-  const cast = await fetch("./json/cast.json")
+  const cast = await fetch("../src/assets/json/cast.json")
     .then(function (resp) {
       return resp.json();
     })
