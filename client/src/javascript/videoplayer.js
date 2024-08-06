@@ -25,9 +25,21 @@ function onYouTubeIframeAPIReady() {
 }
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
+function onPlayerReady() {
+  var observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (
+        !entry.isIntersecting 
+        && (player.getPlayerState() == YT.PlayerState.PLAYING)
+      ) {
+        player.stopVideo();
+      }
+    });
+  }, { threshold: 0.1 });
+
+  var playerElement = document.getElementById('player');
+  observer.observe(playerElement);
+};
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
