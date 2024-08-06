@@ -336,6 +336,9 @@ ul > li > a {
   text-transform: uppercase;
   text-align: center;
 }
+.socials-contents {
+  color: white;
+}
 
 /*---------------ABOUT PAGE STYLING--------------------*/
 .about-title {

@@ -3,8 +3,8 @@
 
 Overview
 ---
-This is my capstone project for CODE:You. It is a marketing and information website for "Bluffing Movie," a debut feature-length film by Jon Ott. This website will be consistent with existing design components and will allow visitors to learn more about the film, its cast and crew, and updates on the film's progress in a simple and accessible way.
-This site uses YouTube's iFrame API to embed a relevent video (and/or the film's trailer when available). It also contains form elements in the newsletter sign-up and on the contact form, and *******connects with a database storage system in order to save supporter information for future marketing*
+This is my capstone project for CODE:You. It is a marketing and information website for "Bluffing Movie," a debut feature-length film by Jon Ott. This website is consistent with existing design components and allows users to learn more about the film, its cast and crew, and updates on the film's progress in a simple and accessible way.
+This site uses YouTube's iFrame API to embed a relevent video (and/or the film's trailer when available). It also contains form elements in the newsletter sign-up and on the contact form and connects with a database storage system in order to save supporter information for future marketing and outreach.
 The goal of the project is to showcase my understanding of HTML, CSS and JavaScript in a visually-appealing and accessible way. 
 
 Resources
