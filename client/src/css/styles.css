@@ -168,7 +168,7 @@ ul > li > a {
   width: 100%;
 }
 .bar-one {
-  background-image: url(images/graphics/cigarette.png);
+  background-image: url(/client/src/assets/images/graphics/cigarette.png);
   background-size: 101%;
   background-repeat: no-repeat;
   margin-top: -30%;
