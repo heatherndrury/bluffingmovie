@@ -168,7 +168,7 @@ ul > li > a {
   width: 100%;
 }
 .bar-one {
-  background-image: url(/client/src/assets/images/graphics/cigarette.png);
+  background-image: url("/client/src/assets/images/graphics/cigarette.png");
   background-size: 101%;
   background-repeat: no-repeat;
   margin-top: -30%;
@@ -197,7 +197,7 @@ ul > li > a {
   display: flex;
   justify-content: center;
   font-size: 5vw;
-  background-image: url('../assets/images/crew.avif');
+  background-image: url("/client/src/assets/images/still-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 5% 10% 5% 10%;
@@ -256,7 +256,7 @@ ul > li > a {
   display: flex;
   justify-content: center;
   font-size: 5vw;
-  background-image: url(images/still-3.jpg);
+  background-image: url("/client/src/assets/images/still-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 5% 10% 5% 10%;

@@ -1,33 +1,31 @@
 const init = async () => {
-
   const getCast = async () => {
-
-    const response = await fetch("../src/assets/json/cast.json");
+    const response = await fetch("/client/src/assets/json/cast.json");
     /**
      * ALWAYS check response status codes from network calls. Status.OK means the response status is between 200 and 299.
      * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
      */
 
-    if ( !response.ok || !response.body ) {
+    if (!response.ok || !response.body) {
       /**
        * If no body returned or no status code then wtf? That is poor etiquette. Let's just return a Promise that resolves to
        * an empty cast array.
-       * 
+       *
        * Reasoning behind returning an empty Promise here is because then we guarantee that no matter what we
        * are returning the same type of data no matter what in an predicable way.
-       * 
+       *
        * If we were sometimes getting a String back and then other times getting a Object back and then other times getting an Array back, now it's more
        * unpredictable and not safe for other people to use.
-       * 
+       *
        * If they were expecting an Array that they wanted to use Array.forEach on and then got back a Number,
        * when they do Number.forEach, it would fail because the .forEach method does not exist on the data type of Number.
-       * 
+       *
        * If we did not do this then anyone who consumes the data returned from the function would have to check for the data type first
        * before using the data to be safe and do "data gymnastics" and start to have trust issues with your code.
-       * 
+       *
        */
-      return Promise.resolve({ "cast": [] })
-    };
+      return Promise.resolve({ cast: [] });
+    }
 
     /**
      * Destructuring cast from response.
@@ -46,7 +44,7 @@ const init = async () => {
     newDiv.classList.add("cast-div");
 
     const newImg = document.createElement("img");
-    newImg.src = castMember?.img || 'https://placehold.co/400x600';
+    newImg.src = castMember?.img || "https://placehold.co/400x600";
     newImg.classList.add("cast-img");
     //newImg.textContent = castMember.img;
 
