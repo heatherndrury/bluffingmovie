@@ -36,10 +36,10 @@ const init = async () => {
     return cast;
   };
 
-  const casts = await getCast();
+  const cast = await getCast();
   const castList = document.getElementById("castList");
 
-  casts.forEach((castMember) => {
+  cast.forEach((castMember) => {
     const newDiv = document.createElement("div");
     newDiv.classList.add("cast-div");
 
