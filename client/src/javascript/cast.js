@@ -1,6 +1,6 @@
 const init = async () => {
   const getCast = async () => {
-    const response = await fetch("/src/assets/json/cast.json");
+    const response = await fetch("/client/src/assets/json/cast.json");
     /**
      * ALWAYS check response status codes from network calls. Status.OK means the response status is between 200 and 299.
      * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
@@ -26,14 +26,15 @@ const init = async () => {
        */
       return Promise.resolve({ cast: [] });
     }
-
+ 
     /**
      * Destructuring cast from response.
      * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
      */
     const { cast } = await response.json();
-
+    console.log(cast);
     return cast;
+    
   };
 
   const cast = await getCast();
