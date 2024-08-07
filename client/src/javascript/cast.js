@@ -5,7 +5,7 @@ const init = async () => {
      * ALWAYS check response status codes from network calls. Status.OK means the response status is between 200 and 299.
      * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
      */
-
+    console.log(response);
     if (!response.ok || !response.body) {
       /**
        * If no body returned or no status code then wtf? That is poor etiquette. Let's just return a Promise that resolves to
