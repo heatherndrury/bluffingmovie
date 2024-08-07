@@ -1,6 +1,6 @@
 const init = async () => {
   const getCast = async () => {
-    const response = await fetch("/client/src/assets/json/cast.json");
+    const response = await fetch("../assets/json/cast.json");
     /**
      * ALWAYS check response status codes from network calls. Status.OK means the response status is between 200 and 299.
      * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200
