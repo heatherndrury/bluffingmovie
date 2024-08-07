@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Freeman";
-  src: url('../assets/fonts/Freeman/Freeman-Regular.ttf');
+  src: url("../assets/fonts/Freeman/Freeman-Regular.ttf");
 }
 
 @font-face {
   font-family: "Tenor_Sans";
-  src: url('../assets/fonts/Tenor_Sans/TenorSans-Regular.ttf');
+  src: url("../assets/fonts/Tenor_Sans/TenorSans-Regular.ttf");
 }
 body {
   background-color: black;
@@ -347,7 +347,7 @@ ul > li > a {
   display: flex;
   justify-content: center;
   font-size: 5vw;
-  background-image: url(images/still-2.jpg);
+  background-image: url("/client/src/assets/images/still-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 5% 10% 5% 10%;
@@ -458,7 +458,7 @@ ul > li > a {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   /* HOME PAGE */
-    #player {
+  #player {
     width: 90%;
     margin: 0 5% 1% 5%;
   }
