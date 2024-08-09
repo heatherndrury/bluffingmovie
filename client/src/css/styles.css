@@ -374,6 +374,7 @@ ul > li > a {
 }
 .still-life-img {
   width: 100%;
+  height: fit-content;
 }
 
 .still-life-container {
